@@ -20,8 +20,11 @@ How the Fractional Divider Works
 Standard integer clock dividers drop fractional remainders when the system clock frequency doesn't split perfectly into the target baud rate, producing timing drift.
 This design avoids drift by implementing a Phase Accumulator Method. 
 On every rising edge of the system clock, a precise decimal tracking factor (INCREMENT) is piled into an internal 24-bit register:
+
 <img width="577" height="96" alt="image" src="https://github.com/user-attachments/assets/8f0f74b9-51ad-4030-b15d-2db3c38833d9" />
+
 For a standard 100MHz clock and 9600Baud:
+
 <img width="753" height="87" alt="image" src="https://github.com/user-attachments/assets/583a2166-fa6a-4a78-b33a-a67151fb412e" />
 
 Finite State Machine (FSM) Specification
