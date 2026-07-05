@@ -44,10 +44,15 @@ Waveform Analysis Metrics:
 Running the Project in Vivado
 ----------------------------
 1.Clone this repository to your local environment.
+
 2.Launch Vivado Design Suite and establish a new project environment targeting your preferred FPGA board (e.g., Digilent Basys 3).
+
 3.Import the source assets located inside the folder "design_source" as design files and the content within "simulation_source"as simulation assets.
+
 4.Set uart_tx_tb as the top simulation module.
+
 5.Click Run Simulation Run Behavioral Simulation.
+
 6.Set the run duration length field located within the top settings layout banner to 1500 us (or higher) to capture the complete serial packet streaming sequence.
 
 <img width="1570" height="810" alt="Screenshot 2026-07-05 220348" src="https://github.com/user-attachments/assets/69404acc-89ce-4434-933c-ab512d03191b" />
